@@ -729,7 +729,7 @@
         </div>
         <div class="product-info">
           <span class="product-name">Design 1</span>
-          <span class="product-price">8000 fcfa</span>
+          <span class="product-price">10000 fcfa</span>
         </div>
         <div class="product-options">
           <button class="option-btn active" data-size="s">S</button>
@@ -752,7 +752,7 @@
         </div>
         <div class="product-info">
           <span class="product-name">Design 2</span>
-          <span class="product-price">8000 fcfa</span>
+          <span class="product-price">10000 fcfa</span>
         </div>
         <div class="product-options">
           <button class="option-btn active" data-size="s">S</button>
@@ -761,6 +761,29 @@
           <button class="option-btn" data-size="xl">XL</button>
         </div>
         <button class="cta-btn" onclick="orderProduct('T-shirt Vision')"><span>Acheter</span></button>
+      </div>
+      
+      <!-- Produit 3 - Nouveau modèle ajouté -->
+      <div class="product-card">
+        <div class="product-image-container">
+          <img src="photo6.jpg" alt="TREPAC T-shirt Legacy Noir" class="product-image" data-color="noir">
+          <img src="photo7.jpg" alt="TREPAC T-shirt Legacy Blanc" class="product-image" data-color="blanc" style="display: none;">
+          <div class="color-variants">
+            <div class="color-switch black active" data-color="noir" onclick="switchColor(this)"></div>
+            <div class="color-switch white" data-color="blanc" onclick="switchColor(this)"></div>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-name">Design 3</span>
+          <span class="product-price">10000 fcfa</span>
+        </div>
+        <div class="product-options">
+          <button class="option-btn active" data-size="s">S</button>
+          <button class="option-btn" data-size="m">M</button>
+          <button class="option-btn" data-size="l">L</button>
+          <button class="option-btn" data-size="xl">XL</button>
+        </div>
+        <button class="cta-btn" onclick="orderProduct('T-shirt Legacy')"><span>Acheter</span></button>
       </div>
     </div>
   </section>
@@ -781,8 +804,9 @@
         <h3>TREPAC</h3>
         <p>Streetwear visionnaire pour ceux qui façonnent demain.</p>
         <div class="social-links">
-          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="social-icon"></a>
-          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="social-icon"></a>
+          <a href="https://www.instagram.com/_tre_pac_.collection_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="social-icon"></a>
+              <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40trepaccollection1%3F_t%3DZM-8to6H75YaOt%26_r%3D1%26fbclid%3DPAZXh0bgNhZW0CMTEAAaf1_fGt4pdgpRFiFoFV01GIUjxr8-uCj9TZ8-IbDLiE2SwQrD4jAi-g0sPMRA_aem_mUjKEVNnVaXS35A7by0ilQ&e=AT373f_iLKHtxOplmSFedv6gsYJinvWXI8LMNoKQ2CKiAMBamqh58H-4yCWsI-pHXjeDCLgJO5ndIi_47eKAmOPoEkqiWIwyuJhjDLY"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png" alt="TikTok" class="social-icon"></a>
+        
           <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="social-icon"></a>
         </div>
       </div>
@@ -812,14 +836,13 @@
   
   <script>
     // Loader
-   // Loader
     window.addEventListener('load', function() {
       setTimeout(function() {
         document.querySelector('.loader').style.opacity = '0';
         setTimeout(function() {
           document.querySelector('.loader').style.display = 'none';
         }, 800);
-      }, 2000); // Augmenté à 2 secondes pour laisser le temps de voir la citation
+      }, 2000);
     });
 
     
